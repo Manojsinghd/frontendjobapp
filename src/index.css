@@ -1,0 +1,315 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 22px; /* Increased font size */
+  }
+  
+  /* Logo & Name */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .app-name {
+    font-size: 26px; /* Increased font size */
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 22px; /* Increased font size */
+  }
+  
+  /* Right Side - Buttons & Dropdown */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Increased space between elements */
+  }
+  
+  /* Login Button */
+  .login-btn {
+    border: 2px solid #007bff;
+    background: transparent;
+    color: #007bff;
+    padding: 10px 20px; /* Increased padding */
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 22px; /* Increased font size */
+  }
+  
+  /* Register Button */
+  .register-btn {
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px; /* Increased padding */
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px; /* Increased font size */
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    font-size: 20px; /* Increased font size */
+    cursor: pointer;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures the modal is on top */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px; /* Width of the modal */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  /* Modal Title */
+  .modal-content h2 {
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 20px; /* Spacing below the title */
+    color: #333; /* Dark text color */
+  }
+  
+  /* Description Text */
+  .modal-content p {
+    font-size: 20px; /* Increased font size */
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Form Group for Inputs (Label + Input) */
+  .form-group {
+    margin-bottom: 20px; /* Spacing between input fields */
+    text-align: left; /* Aligns label to the left */
+    width: 100%; /* Full width for form group */
+  }
+  
+  /* Label Styling */
+  .form-group label {
+    font-size: 22px; /* Increased font size */
+    color: #333; /* Dark text color for labels */
+    display: block; /* Makes label block-level */
+    margin-bottom: 10px; /* Adds space between label and input */
+  }
+  
+  /* Input Field Styling */
+  .modal-content input,
+  .modal-content select {
+    width: 100%; /* Full width of the container */
+    padding: 15px; /* Increased padding */
+    margin: 15px 0; /* Spacing between inputs */
+    font-size: 20px; /* Increased font size */
+    border: 1px solid #ccc; /* Light border for input */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+  }
+  
+  /* Special styling for Mobile Number input */
+  .mobile-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-input span {
+    margin-right: 15px; /* Space between +91 and the input */
+    font-size: 20px; /* Increased font size */
+  }
+  
+  .mobile-input input {
+    flex-grow: 1; /* Makes input grow to take available space */
+    font-size: 20px; /* Increased font size */
+  }
+  
+  /* Checkbox Styling */
+  .form-group input[type="checkbox"] {
+    margin-right: 15px; /* Space between checkbox and label */
+    font-size: 20px; /* Increased font size */
+  }
+  
+  /* Register Button */
+  .modal-content button {
+    width: 100%; /* Full width for buttons */
+    padding: 15px; /* Increased padding */
+    font-size: 20px; /* Increased font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 15px; /* Space between buttons */
+    border: none; /* Removes default border */
+  }
+  
+  /* Register Button */
+  .modal-content button:first-of-type {
+    background-color: #007bff; /* Blue background for register button */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold font for emphasis */
+  }
+  
+  .modal-content button:first-of-type:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    opacity: 0.9; /* Slight opacity change for hover effect */
+  }
+  
+  /* Close Button */
+  .modal-content button:last-of-type {
+    background-color: #ff5722; /* Orange background for close button */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold font for emphasis */
+  }
+  
+  .modal-content button:last-of-type:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+    opacity: 0.9; /* Slight opacity change for hover effect */
+  }
+  
+  /* Terms & Conditions Link Styling */
+  .modal-content a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+  }
+  
+  .modal-content a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Disable background scroll when modal is open */
+  body.modal-open {
+    overflow: hidden; /* Disable body scrolling */
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto; /* Allow modal content to scroll if needed */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    max-height: 80vh; /* Ensure the modal doesn't take up the full screen */
+    overflow-y: auto; /* Allow scrolling within modal if content exceeds height */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Centering the form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto; /* Centers the form horizontally */
+    padding: 20px;
+  }
+  
+  /* Center the form container */
+  .search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto; /* Center form horizontally */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Flex row for form fields (label + input) */
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Take up full width */
+    margin-bottom: 20px; /* Space between rows */
+  }
+  
+  /* Form labels */
+  label {
+    font-size: 22px; /* Increased font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left; /* Align labels to the left */
+  }
+  
+  /* Input fields and select dropdown */
+  input, select {
+    padding: 15px;
+    width: 100%; /* Ensure full width */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 20px; /* Increased font size */
+  }
+  
+  /* Styling for the search button */
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px; /* Curved rectangle */
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%; /* Make button span the full width */
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Spinner Container */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
